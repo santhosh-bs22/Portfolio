@@ -112,25 +112,3 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 });
-
-// Back to top functionality
-const backToTopButton = document.querySelector(".back-to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 300) {
-    backToTopButton.style.opacity = "1";
-    backToTopButton.style.visibility = "visible";
-  } else {
-    backToTopButton.style.opacity = "0";
-    backToTopButton.style.visibility = "hidden";
-  }
-});
-
-backToTopButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-  
-});
