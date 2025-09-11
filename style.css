@@ -98,7 +98,7 @@ nav a.active {
     display: block;
     color: #333; /* Dark text */
   }
-}
+} 
 /* home section */
 .home {
   display: flex;
